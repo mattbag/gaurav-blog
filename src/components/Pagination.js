@@ -10,10 +10,12 @@ const Wrapper = styled.div`
   a {
     background: ${props => props.theme.colors.base};
     color: white;
-    padding: .7em 1em;
+    padding: .6em 1em .7em;
     border-radius: 2px;
     text-decoration: none;
     transition: 0.2s;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.1); */
+    box-shadow: ${props => props.theme.shadow.base};
     &:hover {
       background: ${props => props.theme.colors.highlight};
     }

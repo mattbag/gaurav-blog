@@ -14,6 +14,10 @@ const theme = {
     medium: '50em',
     large: '70em',
   },
+  shadow:{
+    base:'0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08)',
+    lg:'0 10px 20px 0 rgba(0,0,0,.08), 0 3px 10px 0 rgba(0,0,0,.05)',
+  }
 }
 
 export default theme

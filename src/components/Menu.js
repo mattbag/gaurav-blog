@@ -3,12 +3,14 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const Header = styled.header`
-  background: ${props => props.theme.colors.base};
+  /* background-color: rgba(255,255,255,0.9); */
+  background-color:${props => props.theme.colors.base};
   width: 100%;
-  padding: 1.5em 0;
+  padding: 1em 0;
   position:sticky;
   top:0;
   z-index: 5;
+  box-shadow: ${props => props.theme.shadow.base};
 `
 const Nav = styled.nav`
   width: 100%;
