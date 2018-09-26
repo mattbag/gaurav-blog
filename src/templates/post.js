@@ -10,7 +10,7 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDate from '../components/PostDate'
 import SEO from '../components/SEO'
-import Share from '../components/Share'
+// import Share from '../components/Share'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
@@ -39,9 +39,9 @@ const PostTemplate = ({ data, pageContext }) => {
         {tags && <TagList tags={tags} />}
         <PostDate date={publishDate} />
         <PageBody body={body} />
-        <div style={{maxWidth:650,margin:'0 auto'}}>
-            <Share right="true"/>
-        </div>
+        {/* <div style={{maxWidth:650,margin:'0 auto'}}>
+            <Share />
+        </div> */}
         <PostLinks previous={previous} next={next} />
       </Container>
     </Layout>
