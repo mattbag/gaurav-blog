@@ -45,62 +45,61 @@ const ShareList = styled.ul`
     }
 `
 const icon={
-    size: 32,
-    url:location && location.href
+    size: 32
 }
 const Share = (props) => typeof window !== 'undefined' &&
     <ShareList>
         <li>
-            <FacebookShareButton url={icon.url}>
+            <FacebookShareButton url={location && location.href}>
                 <FacebookIcon size={icon.size} />
             </FacebookShareButton>
         </li>
         <li>
-            <TwitterShareButton url={icon.url}>
+            <TwitterShareButton url={location && location.href}>
                 <TwitterIcon size={icon.size} />
             </TwitterShareButton>
         </li>
         <li>
-            <LinkedinShareButton url={icon.url}>
+            <LinkedinShareButton url={location && location.href}>
                 <LinkedinIcon size={icon.size} />
             </LinkedinShareButton>
         </li>
         <li>
-            <WhatsappShareButton url={icon.url}>
+            <WhatsappShareButton url={location && location.href}>
                 <WhatsappIcon size={icon.size} />
             </WhatsappShareButton>
         </li>
         <li>
-            <TelegramShareButton url={icon.url}>
+            <TelegramShareButton url={location && location.href}>
                 <TelegramIcon size={icon.size} />
             </TelegramShareButton>
         </li>
         <li>
-            <GooglePlusShareButton url={icon.url}>
+            <GooglePlusShareButton url={location && location.href}>
                 <GooglePlusIcon size={icon.size} />
             </GooglePlusShareButton>
         </li>
         <li>
-            <EmailShareButton url={icon.url}>
+            <EmailShareButton url={location && location.href}>
                 <EmailIcon size={icon.size} />
             </EmailShareButton>
         </li>
         <li>
-            <RedditShareButton url={icon.url}>
+            <RedditShareButton url={location && location.href}>
                 <RedditIcon size={icon.size} />
             </RedditShareButton>
         </li>
         <li>
-            <LivejournalShareButton url={icon.url}>
+            <LivejournalShareButton url={location && location.href}>
                 <LivejournalIcon size={icon.size} />
             </LivejournalShareButton>
         </li>
         <li>
-            <WorkplaceShareButton url={icon.url}>
+            <WorkplaceShareButton url={location && location.href}>
                 <WorkplaceIcon size={icon.size} />
             </WorkplaceShareButton>
         </li>
     </ShareList>
-
+;
 
 export default Share
