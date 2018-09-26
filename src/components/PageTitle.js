@@ -11,6 +11,7 @@ const Title = styled.h1`
   line-height: 1.2;
   span {
     margin: 0 0 0 0.25em;
+    color: ${props => props.theme.colors.highlight};
   }
   a {
     transition: all 0.2s;

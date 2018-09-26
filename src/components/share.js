@@ -47,7 +47,7 @@ const ShareList = styled.ul`
 const icon={
     size: 32
 }
-const Share = (props) =>
+const Share = (props) => typeof window !== 'undefined' &&
     <ShareList>
         <li>
             <FacebookShareButton url={location && location.href}>
