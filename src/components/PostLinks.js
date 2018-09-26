@@ -14,6 +14,7 @@ const Wrapper = styled.div`
     border-radius: 2px;
     text-decoration: none;
     transition: 0.2s;
+    box-shadow: ${props => props.theme.shadow.base};
     &:hover {
       background: ${props => props.theme.colors.highlight};
     }

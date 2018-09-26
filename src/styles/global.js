@@ -103,4 +103,8 @@ injectGlobal`
   [aria-current="page"]{
     color: #5b8bf7 !important;
   }
+
+  .SocialMediaShareButton{
+    cursor:pointer;
+  }
 `
