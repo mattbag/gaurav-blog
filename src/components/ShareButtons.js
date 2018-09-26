@@ -48,7 +48,7 @@ const icon = {
     size: 32
 }
 
-class Share extends Component {
+class ShareButtons extends Component {
     state = { isClient: false }
 
     componentDidMount() {
@@ -119,4 +119,4 @@ class Share extends Component {
 
 // };
 
-export default Share;
+export default ShareButtons;

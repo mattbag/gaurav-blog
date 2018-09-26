@@ -10,7 +10,7 @@ import TagList from '../components/TagList'
 import PostLinks from '../components/PostLinks'
 import PostDate from '../components/PostDate'
 import SEO from '../components/SEO'
-import Share from '../components/Share'
+import Share from '../components/ShareButtons'
 
 const PostTemplate = ({ data, pageContext }) => {
   const {
