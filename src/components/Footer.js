@@ -20,7 +20,7 @@ const List = styled.ul`
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
   border-top: 1px solid ${props => props.theme.colors.secondary};
-  padding: 2em 0;
+  padding: 1.5em ;
   margin: 0 auto;
 `
 
@@ -48,7 +48,7 @@ const Item = styled.li`
 const Footer = () => (
   <FooterWrap>
     <List>
-      <Item>
+      {/* <Item>
         <a
           href="https://www.contentful.com/"
           rel="nofollow noopener noreferrer"
@@ -60,7 +60,7 @@ const Footer = () => (
             alt="Powered by Contentful"
           />
         </a>
-      </Item>
+      </Item> */}
       <Item>
         <a
           href="https://github.com/ryanwiemer/gatsby-starter-gcn"
@@ -69,6 +69,8 @@ const Footer = () => (
         >
           gatsby-starter-gcn
         </a>{' '}
+      </Item>
+      <Item>
         by{' '}
         <a
           href="https://github.com/ryanwiemer"

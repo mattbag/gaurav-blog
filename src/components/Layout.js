@@ -31,6 +31,7 @@ const Layout = ({ children, submenu }) => {
             <Menu />
             {submenu && <Submenu/>}
             {children}
+            {submenu && <Submenu/>}
           </div>
           <Footer />
         </>

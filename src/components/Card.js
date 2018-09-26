@@ -61,21 +61,21 @@ const Excerpt = styled.p`
   line-height: 1.6;
 `
 
-const Tags = styled.ul`
-  display:flex;
-  padding:0 1em;
-  a{
-    padding:2px 4px;
-    margin-right:4px;
-    border-radius:2px;
-    text-decoration:none;
-    color: ${props => props.theme.colors.base};
-    background-color: ${props => props.theme.colors.secondary};
-    &:hover{
-    background-color: ${props => props.theme.colors.highlight};
-    }
-  }
-`
+// const Tags = styled.ul`
+//   display:flex;
+//   padding:0 1em;
+//   a{
+//     padding:2px 4px;
+//     margin-right:4px;
+//     border-radius:2px;
+//     text-decoration:none;
+//     color: ${props => props.theme.colors.base};
+//     background-color: ${props => props.theme.colors.secondary};
+//     &:hover{
+//     background-color: ${props => props.theme.colors.highlight};
+//     }
+//   }
+// `
 
 const Card = ({ slug, heroImage, title, publishDate, body, tags, ...props }) => {
   return (
