@@ -14,10 +14,10 @@ const Post = styled.li`
   will-change:transform;
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     flex: ${props => (props.featured ? '0 0 100%' : '0 0 49%')};
-    margin: 0 0 1.4rem 0;
+    margin: 0 0 2rem 0;
   }
   @media screen and (min-width: ${props => props.theme.responsive.medium}) {
-    flex: ${props => (props.featured ? '0 0 100%' : '0 0 32%')};
+    flex: ${props => (props.featured ? '0 0 100%' : '0 0 31%')};
   }
   &:hover {
     /* background: ${props => props.theme.colors.tertiary}; */

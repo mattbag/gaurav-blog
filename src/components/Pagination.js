@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   a {
     background: ${props => props.theme.colors.base};
     color: white;
-    padding: .6em 1em .7em;
+    padding: ${props => props.theme.button.padding};
     border-radius: 2px;
     text-decoration: none;
     transition: 0.2s;

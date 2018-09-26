@@ -1,5 +1,9 @@
 const theme = {
   radius: '2px',
+  button:{
+    padding: '.6em 1em .7em',
+  },
+
   colors: {
     base: '#222', // Black
     secondary: '#e9e9e9', // Medium Gray
