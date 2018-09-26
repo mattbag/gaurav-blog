@@ -24,7 +24,7 @@ const Title = styled.h1`
 `
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout submenu="true">
     <Helmet>
       <title>404 - Page Not Found</title>
       <meta name="description" content="Page not found" />

@@ -21,27 +21,29 @@ const Form = styled.form`
     font-size: inherit;
     border: none;
     outline: none;
-    background: ${props => props.theme.colors.tertiary};
+    background: #fff;
+    border: 1px solid #fff;
     color: ${props => props.theme.colors.base};
     border-radius: 2px;
     padding: 1em;
     &::-webkit-input-placeholder {
-      color: gray;
+      color: ${props => props.theme.colors.base};
     }
     &::-moz-placeholder {
-      color: gray;
+      color: ${props => props.theme.colors.base};
     }
     &:-ms-input-placeholder {
-      color: gray;
+      color: ${props => props.theme.colors.base};
     }
     &:-moz-placeholder {
-      color: gray;
+      color: ${props => props.theme.colors.base};
     }
     &:required {
       box-shadow: none;
     }
     &:focus {
       outline: none;
+      border-color:${props => props.theme.colors.highlight};
     }
   }
   &::before {
@@ -83,13 +85,17 @@ const Message = styled.textarea`
   resize: vertical;
 `
 
-const Submit = styled.input`
-  background: ${props => props.theme.colors.base} !important;
-  color: white !important;
+const Submit = styled.button`
+  background: ${props => props.theme.colors.highlight};
+  padding: .7em 3em;
+  font-size:1.2rem;
+  border-radius: ${props => props.theme.radius};
+  box-shadow: ${props => props.theme.shadow.base};
+  color: white;
   cursor: pointer;
-  transition: 0.2s;
+  /* transition: 0.2s; */
   &:hover {
-    background: ${props => props.theme.colors.highlight} !important;
+    background: ${props => props.theme.colors.base};
   }
 `
 
@@ -121,7 +127,8 @@ const Modal = styled.div`
 `
 
 const Button = styled.div`
-  background: ${props => props.theme.colors.base};
+  background-color: ${props => props.theme.colors.base};
+  box-shadow: ${props => props.theme.shadow.base};
   font-size: 1em;
   display: inline-block;
   margin: 0 auto;
@@ -234,11 +241,11 @@ class ContactForm extends React.Component {
           onChange={this.handleInputChange}
           required
         />
-        <Submit name="submit" type="submit" value="Send" />
+        <Submit name="submit" type="submit" value="Send" >Send</Submit>
 
         <Modal visible={this.state.showModal}>
           <p>
-            Thank you for reaching out. I will get back to you as soon as
+            Thank you for reaching out. We will get back to you as soon as
             possible.
           </p>
           <Button onClick={this.closeModal}>Okay</Button>

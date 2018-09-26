@@ -27,6 +27,7 @@ const Post = styled.li`
     /* box-shadow: 0 0 10px 0px rgba(32, 69, 251, .2); */
     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.1); */
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,.12), 0 2px 4px 0 rgba(0,0,0,.08); */
+    background-color:#fff;
     box-shadow: ${props => props.theme.shadow.lg};
     display: flex;
     flex-flow: column;

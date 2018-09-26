@@ -36,7 +36,7 @@ injectGlobal`
   }
   body{
     height: 100%;
-    background: white;
+    background: #f0f1ff;
     line-height: 1;
     font-size: 100%;
     font-variant-ligatures: none;

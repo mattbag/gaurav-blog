@@ -1,8 +1,9 @@
 const theme = {
+  radius: '2px',
   colors: {
-    base: '#121212', // Black
+    base: '#222', // Black
     secondary: '#e9e9e9', // Medium Gray
-    tertiary: '#fff', // Light Gray
+    tertiary: '#efefef', // Light Gray
     highlight: '#5b8bf7', // Light Blue
   },
   sizes: {

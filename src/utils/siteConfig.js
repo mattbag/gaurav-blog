@@ -15,7 +15,7 @@ module.exports = {
   shareImageWidth: 900, // Change to the width of your default share image
   shareImageHeight: 600, // Change to the height of your default share image
   siteLogo: '/logos/logo-512.png', // Logo used for SEO, RSS, and App manifest
-  backgroundColor: '#e9e9e9', // Used for Offline Manifest
-  themeColor: '#121212', // Used for Offline Manifest
+  backgroundColor: '#f0f1ff', // Used for Offline Manifest
+  themeColor: '#f0f1ff', // Used for Offline Manifest
   copyright: 'Copyright © 2018 GCN User', // Copyright string for the RSS feed
 }
