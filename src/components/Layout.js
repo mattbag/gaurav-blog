@@ -9,7 +9,7 @@ import Menu from '../components/Menu'
 import Submenu from '../components/Submenu'
 import Footer from '../components/Footer'
 
-const Template = ({ children }) => {
+const Layout = ({ children, submenu }) => {
   return (
     <div className="siteRoot">
       <Helmet>
@@ -29,7 +29,7 @@ const Template = ({ children }) => {
         <>
           <div className="layout siteContent">
             <Menu />
-            <Submenu/>
+            {submenu && <Submenu/>}
             {children}
           </div>
           <Footer />
@@ -39,4 +39,4 @@ const Template = ({ children }) => {
   )
 }
 
-export default Template
+export default Layout

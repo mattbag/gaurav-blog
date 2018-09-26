@@ -16,6 +16,7 @@ const Nav = styled.nav`
   li {
     display: inline-block;
     margin-right: .5em;
+    white-space:nowrap;
   }
 
   a {

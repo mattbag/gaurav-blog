@@ -27,6 +27,7 @@ const Nav = styled.nav`
   li {
     display: inline-block;
     margin-left: 1em;
+    white-space:nowrap;
     &:first-child {
       position: relative;
       margin: 0;
@@ -57,12 +58,12 @@ const Menu = () => {
         <ul>
         <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Name
+              Home
             </Link>
           </li>
           <li>
             <Link to="/" activeStyle={activeLinkStyle}>
-              Home
+              All Articles
             </Link>
           </li>
         </ul>

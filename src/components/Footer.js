@@ -1,29 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Wrapper = styled.footer`
-  display: flex;
+const FooterWrap = styled.footer`
+  /* display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; */
+  /* align-items: flex-start; */
   margin: 0 auto;
-  max-width: ${props => props.theme.sizes.maxWidth};
+  /* max-width: ${props => props.theme.sizes.maxWidth}; */
+  border-bottom: 4px solid;
+  border-color:${props => props.theme.colors.highlight};
 `
 
 const List = styled.ul`
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  /* justify-content: space-between; */
+  align-items: center;
   width: 100%;
+  max-width: ${props => props.theme.sizes.maxWidth};
   border-top: 1px solid ${props => props.theme.colors.secondary};
-  padding: 1em 0 2em;
-  margin: 0 1.5em;
+  padding: 2em 0;
+  margin: 0 auto;
 `
 
 const Item = styled.li`
   display: inline-block;
   padding: 0.25em 0;
+  margin-right:.7rem;
   width: 100%;
   @media screen and (min-width: ${props => props.theme.responsive.small}) {
     width: auto;
@@ -42,7 +46,7 @@ const Item = styled.li`
 `
 
 const Footer = () => (
-  <Wrapper>
+  <FooterWrap>
     <List>
       <Item>
         <a
@@ -75,7 +79,7 @@ const Footer = () => (
         </a>
       </Item>
     </List>
-  </Wrapper>
+  </FooterWrap>
 )
 
 export default Footer

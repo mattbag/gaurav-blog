@@ -20,10 +20,10 @@ const TagTemplate = ({ data, pageContext }) => {
   const currentPage = pageContext.currentPage
   const isFirstPage = currentPage === 1
 
-  console.log(posts)
+  // console.log(posts)
 
   return (
-    <Layout>
+    <Layout submenu="true">
       {isFirstPage ? (
         <Helmet>
           <title>{`Tag: ${title} - ${config.siteTitle}`}</title>

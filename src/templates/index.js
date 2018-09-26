@@ -16,7 +16,7 @@ const Index = ({ data, pageContext }) => {
   const isFirstPage = currentPage === 1
 
   return (
-    <Layout>
+    <Layout submenu="true">
       <SEO />
       {!isFirstPage && (
         <Helmet>
